@@ -1,7 +1,7 @@
 ﻿
 string[] FillArray()
 {
-  Console.Write("Введите данные для строк массива через пробел: ");
+  Console.Write("\nВведите текст через пробел: ");
   return Console.ReadLine()!.Split(" ");
 }
 int CountElementInStringArray(string text)
@@ -46,7 +46,7 @@ string PrintArray(string[] priarray)
     return output;
 }
 string[] arr = FillArray();
-int countSymbol = CountElementInStringArray("\nВедите минимальное количество символов в строке (по условию задачи <= 3): ");
+int countSymbol = CountElementInStringArray("\nВедите количество символовов для элементов нового массива (по условию задачи <= 3): ");
 string[] newArr = GetNewArrayString(arr, CountElemetNewArray(arr, countSymbol), countSymbol);
 string print = PrintArray(arr);
 string newPrint = PrintArray(newArr);
